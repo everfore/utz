@@ -4,10 +4,10 @@ import (
 	"testing"
 )
 
-// func TestUntar(t *testing.T) {
-// 	Untar("./tar/all.tar")
-// }
+func TestUntar(t *testing.T) {
+	Untar("./tar/test.tar", "./untar")
+}
 
 func TestUnzip(t *testing.T) {
-	Unzip("./zip/all.zip", "/uzip")
+	Unzip("./zip/test.zip", "./uzip")
 }
