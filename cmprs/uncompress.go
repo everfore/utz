@@ -48,6 +48,7 @@ func Untar(tar_filename, target string) (err error) {
 
 func Unzip(zip_filename, target string) (err error) {
 	zr, err := zip.OpenReader(zip_filename)
+	defer zr.Close()
 	if goutils.CheckErr(err) {
 		return
 	}
